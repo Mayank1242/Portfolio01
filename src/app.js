@@ -35,7 +35,7 @@ app.post("/contact",async(req,res)=>{
         const userData =new User(req.body);
         await userData.save();
         
-            res.render("index");
+        res.redirect("/#aboutId");
             
            
     } catch (error) {
