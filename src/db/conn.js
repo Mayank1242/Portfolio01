@@ -1,3 +1,10 @@
 const mongoose=require("mongoose");
 
-mongoose.connect("mongodb+srv://mayank:9411933707Mm@cluster0.aa0swgh.mongodb.net/MyWeb");
+const mongoURI="mongodb+srv://Mayank:mayank@atlascluster.xthj5bm.mongodb.net/";
+
+
+
+mongoose.connect(mongoURI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    });
